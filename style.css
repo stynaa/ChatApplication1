@@ -6,7 +6,7 @@ form #button { color:#FFF; background: #D3936C; border: none; padding: 10px;  wi
 
 #messages { float:inherit; list-style-type: none; margin: 0; padding: 0; }
 #messages li { padding: 5px 10px; }
-#userlist { float:inherit; list-style-type: none; margin: 0; padding-right: 10%; background:#eee; height: 530px;}
+#userlist { float:inherit; list-style-type: none; margin: 0; padding-right: 10%; background:#eee; height: 530px; width: 80%;}
 #userlist li { padding: 5px 10px; }
 
 #userID {

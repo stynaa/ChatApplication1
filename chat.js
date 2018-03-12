@@ -1,3 +1,11 @@
+/*
+  SENG513 Assignment 3
+
+  Name: Shuet-Ching Christina Lo
+  UCID: 10127656
+  Description: client side code for chat application
+*/
+
 var socket = io();
 var msgSettings = [];
 

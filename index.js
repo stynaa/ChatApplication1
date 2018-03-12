@@ -1,7 +1,16 @@
+/*
+  SENG513 Assignment 3
+  
+  Name: Shuet-Ching Christina Lo
+  UCID: 10127656
+  Description: server side code for chat application
+*/
+
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
+var cookieparser = require('cookie-parser');
 
 var allUsers = [];
 //var allColors = [];

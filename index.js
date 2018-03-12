@@ -1,9 +1,9 @@
 /*
-  SENG513 Assignment 3
-  
-  Name: Shuet-Ching Christina Lo
-  UCID: 10127656
-  Description: server side code for chat application
+SENG513 Assignment 3
+
+Name: Shuet-Ching Christina Lo
+UCID: 10127656
+Description: server side code for chat application
 */
 
 var app = require('express')();
@@ -104,6 +104,7 @@ io.on('connection', function(socket){
         //update nickname and pass to client side
         var updatedMD = {name:enText, color:allUsers[index].color, oldname: msgData.name, time: msgData.time};
         io.emit('changeNickname', updatedMD);
+        io.emit('resetOnlineUsers', allUsers);
       }
     }
     //else, store message

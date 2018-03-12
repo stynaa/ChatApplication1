@@ -1,0 +1,64 @@
+<!doctype html>
+  <html>
+   <head>
+    <title>Chat Application</title>
+    <link rel='stylesheet' href='style.css' type='text/css'/>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script
+       src="https://code.jquery.com/jquery-3.1.1.min.js"
+       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+       crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="chat.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+    </script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-xs-8">
+      <div class="_box-r">
+
+        <div class="_b_header">
+          <h2 id="userID"></h2>
+        </div>
+
+        <div class="_b_content">
+          <ul id="messages"></ul>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="col-xs-4">
+      <div class="_box-l">
+
+        <div id="_b_header">
+          <h4 >Online Users: </h4>
+        </div>
+
+        <div id="_b_content">
+          <ul id="userlist"></ul>
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+
+
+  <div class="row" id="bottom_con">
+    <div class="col_xs_1" id="spacing"></div>
+    <div class="col_xs_10"></div>
+    <form id="form" action="" onsubmit="return submitfunction();" >
+      <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" placeholder="Type your message here.." /><input type="submit" id="button" value="Send"/>
+    </form>
+    </div>
+    <div class="col_xs_1" id="spacing"></div>
+  </div>
+  </body>
+</html>

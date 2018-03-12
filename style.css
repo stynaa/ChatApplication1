@@ -1,0 +1,74 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; color:#383E3E; }
+form { padding: 5px; position: fixed; bottom: 5%; left: 10%; width: 80%; }
+form input { border: 1; padding: 10px; width: 80%; margin-right: .5%; }
+form #button { color:#FFF; background: #D3936C; border: none; padding: 10px;  width: 9%; }
+
+#messages { float:inherit; list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#userlist { float:inherit; list-style-type: none; margin: 0; padding-right: 10%; background:#eee; height: 530px;}
+#userlist li { padding: 5px 10px; }
+
+#userID {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#spacing {
+  padding: 5px;
+}
+
+.panel-heading {
+  margin: 10;
+}
+
+._box-r {
+  height: 600px;
+  display: flex;
+  flex-flow:column;
+  padding: 5%;
+}
+
+.box-r ._b_header {
+  flex: 0 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+._box-r ._b_content {
+  flex: 1 1 auto;
+  display: flex;
+  height: 600px;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  background:#eee;
+  }
+
+.box-l {
+  height: 600px;
+  display: flex;
+  padding-left: : 5%;
+  padding-right: 20%;
+}
+
+.box-l ._b_header {
+  flex: 0 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+._box-l ._b_content {
+  flex: 1 1 auto;
+  display: flex;
+  height: 600px;
+  overflow-y: scroll;
+  background:#eee;
+  }
+
+.row {
+  background: #EBD5AE;
+}
+
+#bottom_con {
+  background: #ACCAB1;
+}
